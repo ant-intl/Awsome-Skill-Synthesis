@@ -6,7 +6,7 @@ This repository is based on the arXiv version of **From Heterogeneous Evidence t
 
 ## Current Coverage
 
-As of **21 October 2026**, the catalogue contains **284 distinct papers** across six parts: sources, synthesis methods, representations, utilization, evaluation, and evolution.
+The survey's methodology gives **16 August 2026** as the literature collection cutoff. The catalogue contains **284 distinct papers** across six parts: sources, synthesis methods, representations, utilization, evaluation, and evolution.
 
 ## Regular Updates
 
