@@ -21,25 +21,25 @@ This repository accompanies **From Heterogeneous Evidence to Reusable Procedures
 
 Skills draw on human supervision, external knowledge, and agent experience.
 
-- **[Human Supervision](#sources-human-supervision)**
-  - [Behavioral Demonstrations](#sources-human-supervision-behavioral-demonstrations)
-  - [Corrective Feedback](#sources-human-supervision-corrective-feedback)
-- **[External Knowledge](#sources-external-knowledge)**
-  - [Documentary Artifacts](#sources-external-knowledge-documentary-artifacts)
-  - [Software Artifacts](#sources-external-knowledge-software-artifacts)
-  - [Multimodal Artifacts](#sources-external-knowledge-multimodal-artifacts)
-- **[Agent Experience](#sources-agent-experience)**
-  - [Execution Trajectories](#sources-agent-experience-execution-trajectories)
-  - [Exploratory Practice](#sources-agent-experience-exploratory-practice)
-  - [Deployment Experience](#sources-agent-experience-deployment-experience)
+- **[1.1 Human Supervision](#sources-human-supervision)**
+  - [1.1.1 Behavioral Demonstrations](#sources-human-supervision-behavioral-demonstrations)
+  - [1.1.2 Corrective Feedback](#sources-human-supervision-corrective-feedback)
+- **[1.2 External Knowledge](#sources-external-knowledge)**
+  - [1.2.1 Documentary Artifacts](#sources-external-knowledge-documentary-artifacts)
+  - [1.2.2 Software Artifacts](#sources-external-knowledge-software-artifacts)
+  - [1.2.3 Multimodal Artifacts](#sources-external-knowledge-multimodal-artifacts)
+- **[1.3 Agent Experience](#sources-agent-experience)**
+  - [1.3.1 Execution Trajectories](#sources-agent-experience-execution-trajectories)
+  - [1.3.2 Exploratory Practice](#sources-agent-experience-exploratory-practice)
+  - [1.3.3 Deployment Experience](#sources-agent-experience-deployment-experience)
 
 <a id="sources-human-supervision"></a>
 
-### Human Supervision
+### 1.1 Human Supervision
 
 <a id="sources-human-supervision-behavioral-demonstrations"></a>
 
-#### Behavioral Demonstrations
+#### 1.1.1 Behavioral Demonstrations
 
 <!-- paper:e05 -->
 - (*2025*) **ALLOY: Generating Reusable Agent Workflows from User Demonstration** [[📝 Paper](https://arxiv.org/abs/2510.10049)]  
@@ -91,7 +91,7 @@ Skills draw on human supervision, external knowledge, and agent experience.
 
 <a id="sources-human-supervision-corrective-feedback"></a>
 
-#### Corrective Feedback
+#### 1.1.2 Corrective Feedback
 
 <!-- paper:castelli2007augmentation -->
 - (*2007*) **Augmentation-Based Learning combining observations and user edits for Programming-by-Demonstration** [[📝 Paper](https://doi.org/10.1016/j.knosys.2007.04.007)]  
@@ -107,11 +107,11 @@ Skills draw on human supervision, external knowledge, and agent experience.
 
 <a id="sources-external-knowledge"></a>
 
-### External Knowledge
+### 1.2 External Knowledge
 
 <a id="sources-external-knowledge-documentary-artifacts"></a>
 
-#### Documentary Artifacts
+#### 1.2.1 Documentary Artifacts
 
 <!-- paper:c51 -->
 - (*2025*) **SOP-Agent: Empower General Purpose AI Agent with Domain-Specific SOPs** [[📝 Paper](https://arxiv.org/abs/2501.09316)]  
@@ -155,7 +155,7 @@ Skills draw on human supervision, external knowledge, and agent experience.
 
 <a id="sources-external-knowledge-software-artifacts"></a>
 
-#### Software Artifacts
+#### 1.2.2 Software Artifacts
 
 <!-- paper:e03 -->
 - (*2026*) **Automating Skill Acquisition through Large-Scale Mining of Open-Source Agentic Repositories: A Framework for Multi-Agent Procedural Knowledge Extraction** [[📝 Paper](https://arxiv.org/abs/2603.11808)]  
@@ -211,7 +211,7 @@ Skills draw on human supervision, external knowledge, and agent experience.
 
 <a id="sources-external-knowledge-multimodal-artifacts"></a>
 
-#### Multimodal Artifacts
+#### 1.2.3 Multimodal Artifacts
 
 <!-- paper:c13 -->
 - (*2026*) **RESOURCE2SKILL: Distilling Executable Agent Skills from Human-Created Multimodal Resources** [[📝 Paper](https://arxiv.org/abs/2606.29538)] [[💻 Code](https://github.com/microsoft/Resource2Skill)] [[📦 Data](https://huggingface.co/datasets/microsoft/RESOURCE2SKILL)]  
@@ -243,11 +243,11 @@ Skills draw on human supervision, external knowledge, and agent experience.
 
 <a id="sources-agent-experience"></a>
 
-### Agent Experience
+### 1.3 Agent Experience
 
 <a id="sources-agent-experience-execution-trajectories"></a>
 
-#### Execution Trajectories
+#### 1.3.1 Execution Trajectories
 
 <!-- paper:c01 -->
 - (*2024*) **ExpeL: LLM Agents Are Experiential Learners** [[📝 Paper](https://arxiv.org/abs/2308.10144)] [[💻 Code](https://github.com/LeapLabTHU/ExpeL)]  
@@ -343,7 +343,7 @@ Skills draw on human supervision, external knowledge, and agent experience.
 
 <a id="sources-agent-experience-exploratory-practice"></a>
 
-#### Exploratory Practice
+#### 1.3.2 Exploratory Practice
 
 <!-- paper:e01 -->
 - (*2023*) **Voyager: An Open-Ended Embodied Agent with Large Language Models** [[📝 Paper](https://arxiv.org/abs/2305.16291)] [[💻 Code](https://github.com/MineDojo/Voyager)] [[🌐 Project](https://voyager.minedojo.org/)]  
@@ -455,7 +455,7 @@ Skills draw on human supervision, external knowledge, and agent experience.
 
 <a id="sources-agent-experience-deployment-experience"></a>
 
-#### Deployment Experience
+#### 1.3.3 Deployment Experience
 
 <!-- paper:e02 -->
 - (*2026*) **AutoSkill: Experience-Driven Lifelong Learning via Skill Self-Evolution** [[📝 Paper](https://arxiv.org/abs/2603.01145)] [[💻 Code](https://github.com/ECNU-ICALK/AutoSkill)]  
@@ -569,14 +569,14 @@ Skills draw on human supervision, external knowledge, and agent experience.
 
 Four construction operations turn source evidence into reusable procedures: procedural distillation, contrastive induction, constructive compilation, and objective optimization.
 
-- **[Procedural Distillation](#synthesis-procedural-distillation)**
-- **[Contrastive Induction](#synthesis-contrastive-induction)**
-- **[Constructive Compilation](#synthesis-constructive-compilation)**
-- **[Objective Optimization](#synthesis-objective-optimization)**
+- **[2.1 Procedural Distillation](#synthesis-procedural-distillation)**
+- **[2.2 Contrastive Induction](#synthesis-contrastive-induction)**
+- **[2.3 Constructive Compilation](#synthesis-constructive-compilation)**
+- **[2.4 Objective Optimization](#synthesis-objective-optimization)**
 
 <a id="synthesis-procedural-distillation"></a>
 
-### Procedural Distillation
+### 2.1 Procedural Distillation
 
 <!-- paper:e02 -->
 - (*2026*) **AutoSkill: Experience-Driven Lifelong Learning via Skill Self-Evolution** [[📝 Paper](https://arxiv.org/abs/2603.01145)] [[💻 Code](https://github.com/ECNU-ICALK/AutoSkill)]  
@@ -732,7 +732,7 @@ Four construction operations turn source evidence into reusable procedures: proc
 
 <a id="synthesis-contrastive-induction"></a>
 
-### Contrastive Induction
+### 2.2 Contrastive Induction
 
 <!-- paper:f14 -->
 - (*2023*) **Reflexion: Language Agents with Verbal Reinforcement Learning** [[📝 Paper](https://arxiv.org/abs/2303.11366)] [[💻 Code](https://github.com/noahshinn/reflexion)]  
@@ -820,7 +820,7 @@ Four construction operations turn source evidence into reusable procedures: proc
 
 <a id="synthesis-constructive-compilation"></a>
 
-### Constructive Compilation
+### 2.3 Constructive Compilation
 
 <!-- paper:e01 -->
 - (*2023*) **Voyager: An Open-Ended Embodied Agent with Large Language Models** [[📝 Paper](https://arxiv.org/abs/2305.16291)] [[💻 Code](https://github.com/MineDojo/Voyager)] [[🌐 Project](https://voyager.minedojo.org/)]  
@@ -972,7 +972,7 @@ Four construction operations turn source evidence into reusable procedures: proc
 
 <a id="synthesis-objective-optimization"></a>
 
-### Objective Optimization
+### 2.4 Objective Optimization
 
 <!-- paper:c25 -->
 - (*2026*) **SkillOpt: Executive Strategy for Self-Evolving Agent Skills** [[📝 Paper](https://arxiv.org/abs/2605.23904)] [[💻 Code](https://github.com/microsoft/SkillOpt)] [[🌐 Project](https://microsoft.github.io/SkillOpt/)]  
@@ -1126,22 +1126,22 @@ Four construction operations turn source evidence into reusable procedures: proc
 
 Retained procedures take textual, structured, executable, internalized, or hybrid forms.
 
-- **[Textual Skills](#representations-textual-skills)**
-- **[Structured Skills](#representations-structured-skills)**
-  - [Sequential Workflows](#representations-structured-skills-sequential-workflows)
-  - [Graph-Based Representations](#representations-structured-skills-graph-based-representations)
-  - [Typed Specifications and Intermediate Representations](#representations-structured-skills-typed-specifications-and-intermediate-representations)
-- **[Executable Skills](#representations-executable-skills)**
-  - [Functions, Scripts, and Executable Modules](#representations-executable-skills-functions-scripts-and-executable-modules)
-  - [Compiled Runtime Interfaces and Harnesses](#representations-executable-skills-compiled-runtime-interfaces-and-harnesses)
-- **[Internalized Skills](#representations-internalized-skills)**
-  - [Adapter- and LoRA-based Skills](#representations-internalized-skills-adapter-and-lora-based-skills)
-  - [Learned Policies and Controllers](#representations-internalized-skills-learned-policies-and-controllers)
-- **[Hybrid Skills](#representations-hybrid-skills)**
+- **[3.1 Textual Skills](#representations-textual-skills)**
+- **[3.2 Structured Skills](#representations-structured-skills)**
+  - [3.2.1 Sequential Workflows](#representations-structured-skills-sequential-workflows)
+  - [3.2.2 Graph-Based Representations](#representations-structured-skills-graph-based-representations)
+  - [3.2.3 Typed Specifications and Intermediate Representations](#representations-structured-skills-typed-specifications-and-intermediate-representations)
+- **[3.3 Executable Skills](#representations-executable-skills)**
+  - [3.3.1 Functions, Scripts, and Executable Modules](#representations-executable-skills-functions-scripts-and-executable-modules)
+  - [3.3.2 Compiled Runtime Interfaces and Harnesses](#representations-executable-skills-compiled-runtime-interfaces-and-harnesses)
+- **[3.4 Internalized Skills](#representations-internalized-skills)**
+  - [3.4.1 Adapter- and LoRA-based Skills](#representations-internalized-skills-adapter-and-lora-based-skills)
+  - [3.4.2 Learned Policies and Controllers](#representations-internalized-skills-learned-policies-and-controllers)
+- **[3.5 Hybrid Skills](#representations-hybrid-skills)**
 
 <a id="representations-textual-skills"></a>
 
-### Textual Skills
+### 3.1 Textual Skills
 
 <!-- paper:c01 -->
 - (*2024*) **ExpeL: LLM Agents Are Experiential Learners** [[📝 Paper](https://arxiv.org/abs/2308.10144)] [[💻 Code](https://github.com/LeapLabTHU/ExpeL)]  
@@ -1265,11 +1265,11 @@ Retained procedures take textual, structured, executable, internalized, or hybri
 
 <a id="representations-structured-skills"></a>
 
-### Structured Skills
+### 3.2 Structured Skills
 
 <a id="representations-structured-skills-sequential-workflows"></a>
 
-#### Sequential Workflows
+#### 3.2.1 Sequential Workflows
 
 <!-- paper:e05 -->
 - (*2025*) **ALLOY: Generating Reusable Agent Workflows from User Demonstration** [[📝 Paper](https://arxiv.org/abs/2510.10049)]  
@@ -1309,7 +1309,7 @@ Retained procedures take textual, structured, executable, internalized, or hybri
 
 <a id="representations-structured-skills-graph-based-representations"></a>
 
-#### Graph-Based Representations
+#### 3.2.2 Graph-Based Representations
 
 <!-- paper:c51 -->
 - (*2025*) **SOP-Agent: Empower General Purpose AI Agent with Domain-Specific SOPs** [[📝 Paper](https://arxiv.org/abs/2501.09316)]  
@@ -1377,7 +1377,7 @@ Retained procedures take textual, structured, executable, internalized, or hybri
 
 <a id="representations-structured-skills-typed-specifications-and-intermediate-representations"></a>
 
-#### Typed Specifications and Intermediate Representations
+#### 3.2.3 Typed Specifications and Intermediate Representations
 
 <!-- paper:e26 -->
 - (*2026*) **From Skill Text to Skill Structure: The Scheduling-Structural-Logical Representation for Agent Skills** [[📝 Paper](https://arxiv.org/abs/2604.24026)] [[💻 Code](https://github.com/COOLPKU/SSL)]  
@@ -1437,11 +1437,11 @@ Retained procedures take textual, structured, executable, internalized, or hybri
 
 <a id="representations-executable-skills"></a>
 
-### Executable Skills
+### 3.3 Executable Skills
 
 <a id="representations-executable-skills-functions-scripts-and-executable-modules"></a>
 
-#### Functions, Scripts, and Executable Modules
+#### 3.3.1 Functions, Scripts, and Executable Modules
 
 <!-- paper:e01 -->
 - (*2023*) **Voyager: An Open-Ended Embodied Agent with Large Language Models** [[📝 Paper](https://arxiv.org/abs/2305.16291)] [[💻 Code](https://github.com/MineDojo/Voyager)] [[🌐 Project](https://voyager.minedojo.org/)]  
@@ -1549,7 +1549,7 @@ Retained procedures take textual, structured, executable, internalized, or hybri
 
 <a id="representations-executable-skills-compiled-runtime-interfaces-and-harnesses"></a>
 
-#### Compiled Runtime Interfaces and Harnesses
+#### 3.3.2 Compiled Runtime Interfaces and Harnesses
 
 <!-- paper:e27 -->
 - (*2026*) **SkVM: Revisiting Language VM for Skills across Heterogenous LLMs and Harnesses** [[📝 Paper](https://arxiv.org/abs/2604.03088)]  
@@ -1589,11 +1589,11 @@ Retained procedures take textual, structured, executable, internalized, or hybri
 
 <a id="representations-internalized-skills"></a>
 
-### Internalized Skills
+### 3.4 Internalized Skills
 
 <a id="representations-internalized-skills-adapter-and-lora-based-skills"></a>
 
-#### Adapter- and LoRA-based Skills
+#### 3.4.1 Adapter- and LoRA-based Skills
 
 <!-- paper:c56 -->
 - (*2026*) **Parametric Skills** [[📝 Paper](https://arxiv.org/abs/2606.30015)]  
@@ -1637,7 +1637,7 @@ Retained procedures take textual, structured, executable, internalized, or hybri
 
 <a id="representations-internalized-skills-learned-policies-and-controllers"></a>
 
-#### Learned Policies and Controllers
+#### 3.4.2 Learned Policies and Controllers
 
 <!-- paper:gu2025colada -->
 - (*2024*) **Continual Robot Skill and Task Learning via Dialogue** [[📝 Paper](https://arxiv.org/abs/2409.03166)]  
@@ -1693,7 +1693,7 @@ Retained procedures take textual, structured, executable, internalized, or hybri
 
 <a id="representations-hybrid-skills"></a>
 
-### Hybrid Skills
+### 3.5 Hybrid Skills
 
 <!-- paper:c07 -->
 - (*2026*) **CoEvoSkills: Self-Evolving Agent Skills via Co-Evolutionary Verification** [[📝 Paper](https://arxiv.org/abs/2604.01687)] [[💻 Code](https://github.com/Zhang-Henry/CoEvoSkills)]  
@@ -1743,14 +1743,14 @@ Retained procedures take textual, structured, executable, internalized, or hybri
 
 Agents use skills through context injection, runtime invocation, and model activation, with multi-skill orchestration coordinating their use.
 
-- **[Context Injection](#utilization-context-injection)**
-- **[Runtime Invocation](#utilization-runtime-invocation)**
-- **[Model Activation](#utilization-model-activation)**
-- **[Multi-Skill Orchestration](#utilization-multi-skill-orchestration)**
+- **[4.1 Context Injection](#utilization-context-injection)**
+- **[4.2 Runtime Invocation](#utilization-runtime-invocation)**
+- **[4.3 Model Activation](#utilization-model-activation)**
+- **[4.4 Multi-Skill Orchestration](#utilization-multi-skill-orchestration)**
 
 <a id="utilization-context-injection"></a>
 
-### Context Injection
+### 4.1 Context Injection
 
 <!-- paper:c01 -->
 - (*2024*) **ExpeL: LLM Agents Are Experiential Learners** [[📝 Paper](https://arxiv.org/abs/2308.10144)] [[💻 Code](https://github.com/LeapLabTHU/ExpeL)]  
@@ -1842,7 +1842,7 @@ Agents use skills through context injection, runtime invocation, and model activ
 
 <a id="utilization-runtime-invocation"></a>
 
-### Runtime Invocation
+### 4.2 Runtime Invocation
 
 <!-- paper:e01 -->
 - (*2023*) **Voyager: An Open-Ended Embodied Agent with Large Language Models** [[📝 Paper](https://arxiv.org/abs/2305.16291)] [[💻 Code](https://github.com/MineDojo/Voyager)] [[🌐 Project](https://voyager.minedojo.org/)]  
@@ -1938,7 +1938,7 @@ Agents use skills through context injection, runtime invocation, and model activ
 
 <a id="utilization-model-activation"></a>
 
-### Model Activation
+### 4.3 Model Activation
 
 <!-- paper:c56 -->
 - (*2026*) **Parametric Skills** [[📝 Paper](https://arxiv.org/abs/2606.30015)]  
@@ -2010,7 +2010,7 @@ Agents use skills through context injection, runtime invocation, and model activ
 
 <a id="utilization-multi-skill-orchestration"></a>
 
-### Multi-Skill Orchestration
+### 4.4 Multi-Skill Orchestration
 
 <!-- paper:c20 -->
 - (*2026*) **Graph-of-Skills: Dependency-Aware Structural Retrieval for Massive Agent Skills** [[📝 Paper](https://arxiv.org/abs/2604.05333)] [[💻 Code](https://github.com/davidliuk/graph-of-skills)]  
@@ -2104,25 +2104,25 @@ Agents use skills through context injection, runtime invocation, and model activ
 
 Evaluation covers five quality dimensions and benchmarks for synthesis, utilization, evolution, and security.
 
-- **[Metrics](#evaluation-metrics)**
-  - [Fidelity](#evaluation-metrics-fidelity)
-  - [Utility](#evaluation-metrics-utility)
-  - [Transferability](#evaluation-metrics-transferability)
-  - [Efficiency](#evaluation-metrics-efficiency)
-  - [Safety](#evaluation-metrics-safety)
-- **[Benchmarks](#evaluation-benchmarks)**
-  - [Synthesis](#evaluation-benchmarks-synthesis)
-  - [Utilization](#evaluation-benchmarks-utilization)
-  - [Evolution](#evaluation-benchmarks-evolution)
-  - [Security](#evaluation-benchmarks-security)
+- **[5.1 Metrics](#evaluation-metrics)**
+  - [5.1.1 Fidelity](#evaluation-metrics-fidelity)
+  - [5.1.2 Utility](#evaluation-metrics-utility)
+  - [5.1.3 Transferability](#evaluation-metrics-transferability)
+  - [5.1.4 Efficiency](#evaluation-metrics-efficiency)
+  - [5.1.5 Safety](#evaluation-metrics-safety)
+- **[5.2 Benchmarks](#evaluation-benchmarks)**
+  - [5.2.1 Synthesis](#evaluation-benchmarks-synthesis)
+  - [5.2.2 Utilization](#evaluation-benchmarks-utilization)
+  - [5.2.3 Evolution](#evaluation-benchmarks-evolution)
+  - [5.2.4 Security](#evaluation-benchmarks-security)
 
 <a id="evaluation-metrics"></a>
 
-### Metrics
+### 5.1 Metrics
 
 <a id="evaluation-metrics-fidelity"></a>
 
-#### Fidelity
+#### 5.1.1 Fidelity
 
 <!-- paper:c23 -->
 - (*2026*) **ContractSkill: Repairable Contract-Based Skills for Multimodal Web Agents** [[📝 Paper](https://arxiv.org/abs/2603.20340)] [[💻 Code](https://github.com/underfitting-lu/contractskill)]  
@@ -2158,7 +2158,7 @@ Evaluation covers five quality dimensions and benchmarks for synthesis, utilizat
 
 <a id="evaluation-metrics-utility"></a>
 
-#### Utility
+#### 5.1.2 Utility
 
 <!-- paper:e31 -->
 - (*2026*) **SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks** [[📝 Paper](https://arxiv.org/abs/2602.12670)] [[💻 Code](https://github.com/benchflow-ai/skillsbench)] [[🌐 Project](https://www.skillsbench.ai/)]  
@@ -2194,7 +2194,7 @@ Evaluation covers five quality dimensions and benchmarks for synthesis, utilizat
 
 <a id="evaluation-metrics-transferability"></a>
 
-#### Transferability
+#### 5.1.3 Transferability
 
 <!-- paper:c46 -->
 - (*2026*) **Managing Procedural Memory in LLM Agents: Control, Adaptation, and Evaluation** [[📝 Paper](https://arxiv.org/abs/2606.23127)]  
@@ -2226,7 +2226,7 @@ Evaluation covers five quality dimensions and benchmarks for synthesis, utilizat
 
 <a id="evaluation-metrics-efficiency"></a>
 
-#### Efficiency
+#### 5.1.4 Efficiency
 
 <!-- paper:c34 -->
 - (*2026*) **SkillReducer: Optimizing LLM Agent Skills for Token Efficiency** [[📝 Paper](https://arxiv.org/abs/2603.29919)]  
@@ -2278,7 +2278,7 @@ Evaluation covers five quality dimensions and benchmarks for synthesis, utilizat
 
 <a id="evaluation-metrics-safety"></a>
 
-#### Safety
+#### 5.1.5 Safety
 
 <!-- paper:c54 -->
 - (*2026*) **Agent Skill Security: Threat Models, Attacks, Defenses, and Evaluation** [[📝 Paper](https://arxiv.org/abs/2607.13987)]  
@@ -2338,11 +2338,11 @@ Evaluation covers five quality dimensions and benchmarks for synthesis, utilizat
 
 <a id="evaluation-benchmarks"></a>
 
-### Benchmarks
+### 5.2 Benchmarks
 
 <a id="evaluation-benchmarks-synthesis"></a>
 
-#### Synthesis
+#### 5.2.1 Synthesis
 
 <!-- paper:xzhou2026skillgenbench -->
 - (*2026*) **SkillGenBench: Benchmarking Skill Generation Pipelines for LLM Agents** [[📝 Paper](https://arxiv.org/abs/2605.18693)] [[💻 Code](https://github.com/QuantaAlpha/SkillGenBench)]  
@@ -2354,7 +2354,7 @@ Evaluation covers five quality dimensions and benchmarks for synthesis, utilizat
 
 <a id="evaluation-benchmarks-utilization"></a>
 
-#### Utilization
+#### 5.2.2 Utilization
 
 <!-- paper:e31 -->
 - (*2026*) **SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks** [[📝 Paper](https://arxiv.org/abs/2602.12670)] [[💻 Code](https://github.com/benchflow-ai/skillsbench)] [[🌐 Project](https://www.skillsbench.ai/)]  
@@ -2386,7 +2386,7 @@ Evaluation covers five quality dimensions and benchmarks for synthesis, utilizat
 
 <a id="evaluation-benchmarks-evolution"></a>
 
-#### Evolution
+#### 5.2.3 Evolution
 
 <!-- paper:c44 -->
 - (*2026*) **SkillFlow:Benchmarking Lifelong Skill Discovery and Evolution for Autonomous Agents** [[📝 Paper](https://arxiv.org/abs/2604.17308)] [[💻 Code](https://github.com/ZhangZi-a/SkillFlow)]  
@@ -2414,7 +2414,7 @@ Evaluation covers five quality dimensions and benchmarks for synthesis, utilizat
 
 <a id="evaluation-benchmarks-security"></a>
 
-#### Security
+#### 5.2.4 Security
 
 <!-- paper:c40 -->
 - (*2026*) **Behavioral Integrity Verification for AI Agent Skills** [[📝 Paper](https://arxiv.org/abs/2605.11770)]  
@@ -2452,16 +2452,16 @@ Evaluation covers five quality dimensions and benchmarks for synthesis, utilizat
 
 Skills and their libraries evolve through refinement, reorganization, migration, and reduction.
 
-- **[Refinement](#evolution-refinement)**
-- **[Reorganization](#evolution-reorganization)**
-  - [Consolidation](#evolution-reorganization-consolidation)
-  - [Specialization](#evolution-reorganization-specialization)
-- **[Migration](#evolution-migration)**
-- **[Reduction](#evolution-reduction)**
+- **[6.1 Refinement](#evolution-refinement)**
+- **[6.2 Reorganization](#evolution-reorganization)**
+  - [6.2.1 Consolidation](#evolution-reorganization-consolidation)
+  - [6.2.2 Specialization](#evolution-reorganization-specialization)
+- **[6.3 Migration](#evolution-migration)**
+- **[6.4 Reduction](#evolution-reduction)**
 
 <a id="evolution-refinement"></a>
 
-### Refinement
+### 6.1 Refinement
 
 <!-- paper:e12 -->
 - (*2025*) **SkillWeaver: Web Agents can Self-Improve by Discovering and Honing Skills** [[📝 Paper](https://arxiv.org/abs/2504.07079)] [[💻 Code](https://github.com/OSU-NLP-Group/SkillWeaver)]  
@@ -2581,11 +2581,11 @@ Skills and their libraries evolve through refinement, reorganization, migration,
 
 <a id="evolution-reorganization"></a>
 
-### Reorganization
+### 6.2 Reorganization
 
 <a id="evolution-reorganization-consolidation"></a>
 
-#### Consolidation
+#### 6.2.1 Consolidation
 
 <!-- paper:xli2026skillgraph -->
 - (*2026*) **SkillGraph: Skill-Augmented Reinforcement Learning for Agents via Evolving Skill Graphs** [[📝 Paper](https://arxiv.org/abs/2605.12039)]  
@@ -2617,7 +2617,7 @@ Skills and their libraries evolve through refinement, reorganization, migration,
 
 <a id="evolution-reorganization-specialization"></a>
 
-#### Specialization
+#### 6.2.2 Specialization
 
 <!-- paper:xli2026skillgraph -->
 - (*2026*) **SkillGraph: Skill-Augmented Reinforcement Learning for Agents via Evolving Skill Graphs** [[📝 Paper](https://arxiv.org/abs/2605.12039)]  
@@ -2633,7 +2633,7 @@ Skills and their libraries evolve through refinement, reorganization, migration,
 
 <a id="evolution-migration"></a>
 
-### Migration
+### 6.3 Migration
 
 <!-- paper:xblumenfeld2026aip -->
 - (*2026*) **AIP: A Graph Representation for Learning and Governing Agent Skills** [[📝 Paper](https://arxiv.org/abs/2606.04781)] [[💻 Code](https://github.com/zach-blumenfeld/aip-skillbench)]  
@@ -2673,7 +2673,7 @@ Skills and their libraries evolve through refinement, reorganization, migration,
 
 <a id="evolution-reduction"></a>
 
-### Reduction
+### 6.4 Reduction
 
 <!-- paper:c34 -->
 - (*2026*) **SkillReducer: Optimizing LLM Agent Skills for Token Efficiency** [[📝 Paper](https://arxiv.org/abs/2603.29919)]  
