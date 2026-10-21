@@ -1,5 +1,6 @@
 # Repository Maintenance Guide
 
+
 ## Purpose
 
 This repository is based on the arXiv version of **From Heterogeneous Evidence to Reusable Procedures: A Survey of Agent Skill Synthesis** and helps readers navigate research on agent skill synthesis and reuse.

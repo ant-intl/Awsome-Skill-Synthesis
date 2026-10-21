@@ -1,5 +1,6 @@
 <h1 align="center">Awesome-Skill-Synthesis</h1>
 
+
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 This repository accompanies **From Heterogeneous Evidence to Reusable Procedures: A Survey of Agent Skill Synthesis** and organizes research on agent skill synthesis and reuse.
