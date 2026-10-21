@@ -6,14 +6,14 @@ This repository accompanies **From Heterogeneous Evidence to Reusable Procedures
 
 ## Contents
 
-| Part | Overview | Paper Count |
+| Part | Overview | Paper |
 | --- | --- | ---: |
-| [1. Skill Sources](#sources) | Sources provide the evidence used to synthesize skills. | 114 |
-| [2. Skill Synthesis Methods](#synthesis) | Methods transform source evidence into reusable skills. | 125 |
-| [3. Skill Representations](#representations) | Representations define how skills are stored and accessed. | 131 |
-| [4. Skill Utilization](#utilization) | Agents select, execute, and compose skills to solve tasks. | 80 |
-| [5. Skill Evaluation](#evaluation) | Evaluation measures skill quality and effects on task performance. | 51 |
-| [6. Skill Evolution](#evolution) | Evolution updates skills and maintains their libraries. | 59 |
+| [1.&nbsp;Skill&nbsp;Sources](#sources) | Sources&nbsp;provide&nbsp;the&nbsp;evidence&nbsp;used&nbsp;to&nbsp;synthesize&nbsp;skills. | 114 |
+| [2.&nbsp;Skill&nbsp;Synthesis&nbsp;Methods](#synthesis) | Methods&nbsp;transform&nbsp;source&nbsp;evidence&nbsp;into&nbsp;reusable&nbsp;skills. | 125 |
+| [3.&nbsp;Skill&nbsp;Representations](#representations) | Representations&nbsp;define&nbsp;how&nbsp;skills&nbsp;are&nbsp;stored&nbsp;and&nbsp;accessed. | 131 |
+| [4.&nbsp;Skill&nbsp;Utilization](#utilization) | Agents&nbsp;select,&nbsp;execute,&nbsp;and&nbsp;compose&nbsp;skills&nbsp;to&nbsp;solve&nbsp;tasks. | 80 |
+| [5.&nbsp;Skill&nbsp;Evaluation](#evaluation) | Evaluation&nbsp;measures&nbsp;skill&nbsp;quality&nbsp;and&nbsp;effects&nbsp;on&nbsp;task&nbsp;performance. | 51 |
+| [6.&nbsp;Skill&nbsp;Evolution](#evolution) | Evolution&nbsp;updates&nbsp;skills&nbsp;and&nbsp;maintains&nbsp;their&nbsp;libraries. | 59 |
 
 <a id="sources"></a>
 
@@ -2735,7 +2735,7 @@ Skills and their libraries evolve through refinement, reorganization, migration,
 
 ## Contributing
 
-Contributions are welcome. Please provide the paper, its appropriate taxonomy category, a concise description of its role in skill synthesis or reuse, and an author-released implementation when available. See [MAINTENANCE.md](MAINTENANCE.md) for the update workflow.
+Contributions are welcome. Please provide the paper, its appropriate taxonomy category, a concise description of its role in skill synthesis or reuse, and an author-released implementation when available. See [MAINTENANCE.md](MAINTENANCE.md) for our maintenance plans.
 
 ## Acknowledgments
 

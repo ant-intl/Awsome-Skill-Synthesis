@@ -1,40 +1,15 @@
-# Maintaining the survey catalogue
+# Repository Maintenance Guide
 
-The catalogue follows the six literature taxonomy figures in *From Heterogeneous Evidence to Reusable Procedures: A Survey of Agent Skill Synthesis*.
+## Purpose
 
-## Files
+This repository is based on the arXiv version of **From Heterogeneous Evidence to Reusable Procedures: A Survey of Agent Skill Synthesis** and helps readers navigate research on agent skill synthesis and reuse.
 
-- `data/papers.json` holds one record per paper, including its description and links.
-- `data/taxonomy.json` maps papers to the categories in Figures 4, 6, 8, 10, 11, and 13.
-- `data/source_manifest.json` records the survey snapshot and synchronization date.
-- `scripts/build_readme.py` validates these records and generates `README.md` using the Python standard library.
+## Current Coverage
 
-## Updating an entry
+As of **21 October 2026**, the catalogue contains **284 distinct papers** across six parts: sources, synthesis methods, representations, utilization, evaluation, and evolution.
 
-1. Edit the paper's record in `data/papers.json`. Keep its ID stable; the initial IDs match the survey bibliography keys.
-2. Write one factual sentence explaining its contribution to skill construction, representation, use, evaluation, or evolution. For foundational papers, describe the mechanism relevant to the taxonomy.
-3. Use a direct paper page or publisher DOI. Add a code link when the authors' paper, project page, or repository establishes the connection. Record that evidence under `code_provenance`. Label project pages and datasets separately.
-4. Update the relevant lists in `data/taxonomy.json`. A paper may occur in multiple categories; list it once within each category.
-5. Update the synchronization date when incorporating a new survey snapshot.
-6. Regenerate and check the catalogue:
+## Regular Updates
 
-   ```bash
-   python3 scripts/build_readme.py
-   python3 scripts/build_readme.py --check
-   ```
+We will actively maintain both the survey and this repository through regular literature reviews, adding relevant work, refining summaries and classifications, and keeping paper and code links up to date.
 
-When the manuscript source is available locally, also check every category against its corresponding figure node:
-
-```bash
-python3 scripts/build_readme.py --check --survey-source /path/to/arxiv/source
-```
-
-## Matching the survey
-
-Keep the published category hierarchy when adding entries. In particular, synthesis methods and utilization have four direct categories; representations have secondary categories under structured, executable, and internalized skills; evaluation separates metrics and benchmarks; evolution has secondary categories under reorganization.
-
-Use full titles and paper identifiers to distinguish similarly named systems, including SkillSmith, SkillFlow, SkillTrace, and GraSP/GRASP. Updated arXiv titles can differ from titles in the manuscript bibliography without indicating a different paper.
-
-The README omits unconfirmed code links. An omitted link does not establish that no implementation exists. A repository referenced as a dependency or baseline is not the paper's implementation. If an author link becomes unavailable, retain its provenance in the data and remove it from the displayed `code_url` until resolved.
-
-Check external links when adding or revising them. The local validator checks structure, coverage, and README consistency; it does not make network requests. Paper years initially follow the survey bibliography, with explicit corrections where primary publication records establish an error.
+Suggestions, new papers, and corrections are welcome through issues and pull requests.
