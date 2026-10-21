@@ -2730,17 +2730,3 @@ Skills and their libraries evolve through refinement, reorganization, migration,
 <!-- paper:destefanis2026gitskills -->
 - (*2026*) **GitSkills: A Dataset of Agent Skills on GitHub** [[📝 Paper](https://arxiv.org/abs/2608.10906)] [[📦 Data](https://huggingface.co/datasets/mvaccargiu/gitskills)]  
   → GitSkills collects public GitHub skill artifacts to support empirical study of skill structure, distribution, and maintenance.
-
-[↑ Contents](#contents)
-
-## Contributing
-
-Contributions are welcome. Please provide the paper, its appropriate taxonomy category, a concise description of its role in skill synthesis or reuse, and an author-released implementation when available. See [MAINTENANCE.md](MAINTENANCE.md) for our maintenance plans.
-
-## Acknowledgments
-
-The catalogue format is inspired by [takeshiww/Awsome-Skill-Synthesis](https://github.com/takeshiww/Awsome-Skill-Synthesis). The categories and literature mappings follow the accompanying survey.
-
-## License
-
-This repository uses the [MIT License](LICENSE). Linked papers, datasets, and software retain their respective licenses.
