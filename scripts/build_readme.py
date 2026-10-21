@@ -18,6 +18,15 @@ INTRO = {
     'evolution': 'Skills and their libraries evolve through refinement, reorganization, migration, and reduction.',
 }
 
+OVERVIEW = {
+    'sources': 'Sources provide the evidence used to synthesize skills.',
+    'synthesis': 'Methods transform source evidence into reusable skills.',
+    'representations': 'Representations define how skills are stored and accessed.',
+    'utilization': 'Agents select, execute, and compose skills to solve tasks.',
+    'evaluation': 'Evaluation measures skill quality and effects on task performance.',
+    'evolution': 'Evolution updates skills and maintains their libraries.',
+}
+
 def slug(text):
     return re.sub(r'[^a-z0-9]+', '-', text.lower()).strip('-')
 
@@ -57,37 +66,36 @@ def validate(papers, taxonomy):
 
 def render(papers, taxonomy, manifest):
     by_id = validate(papers, taxonomy)
-    placements = sum(len(c['papers']) for t in taxonomy for c in t['categories'])
-    categories = sum(len(t['categories']) for t in taxonomy)
     lines = [
         '<h1 align="center">Awesome-Skill-Synthesis</h1>', '',
-        '<p align="center">A curated collection of research on constructing, representing, using, evaluating, and evolving reusable agent skills.</p>', '',
         '[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)', '',
-        'Companion repository for **' + manifest['survey_title'] + '**.', '',
-        f'This catalogue follows Figures 4, 6, 8, 10, 11, and 13 of the survey: **{len(papers)} distinct papers**, **{categories} literature categories**, and **{placements} paper-to-category mappings**. '
-        'A paper can appear in several categories because it contributes to multiple parts of the skill lifecycle. '
-        'The collection includes the foundational work shown in the survey taxonomies.', '',
-        'Each entry gives a one-sentence description, a paper link, and an author-linked code repository when confirmed; project pages and datasets are labeled separately.', '',
-        'Last synchronized with the survey: **' + manifest['synced_on'] + '**.', '',
+        'This repository accompanies **' + manifest['survey_title'] + '** and organizes research on agent skill synthesis and reuse.', '',
         '## Contents', '',
-        '| Part | Survey figure | Distinct papers |',
+        '| Part | Overview | Paper Count |',
         '| --- | --- | ---: |',
     ]
     for n, part in enumerate(taxonomy, 1):
         count = len({k for c in part['categories'] for k in c['papers']})
-        lines.append(f"| [{n}. {part['title']}](#{part['id']}) | Figure {part['figure']} | {count} |")
-    lines += ['', 'Counts overlap across parts. [Maintenance guide](MAINTENANCE.md) · [Paper data](data/papers.json) · [Taxonomy mappings](data/taxonomy.json)', '']
+        lines.append(f"| [{n}. {part['title']}](#{part['id']}) | {OVERVIEW[part['id']]} | {count} |")
+    lines.append('')
     for n, part in enumerate(taxonomy, 1):
         lines += [f'<a id="{part["id"]}"></a>', '', f'## {n}. {part["title"]}', '', INTRO[part['id']], '']
+        navigation_parents = set()
         for category in part['categories']:
-            title = ' / '.join(category['path'])
-            lines.append(f'- [{title}](#{anchor(part, category["path"])})')
+            path = category['path']
+            if len(path) == 2:
+                if path[0] not in navigation_parents:
+                    lines.append(f'- **[{path[0]}](#{anchor(part, path[:1])})**')
+                    navigation_parents.add(path[0])
+                lines.append(f'  - [{path[1]}](#{anchor(part, path)})')
+            else:
+                lines.append(f'- **[{path[0]}](#{anchor(part, path)})**')
         lines.append('')
         parent = None
         for category in part['categories']:
             path = category['path']
             if len(path) == 2 and path[0] != parent:
-                lines += [f'### {path[0]}', '']
+                lines += [f'<a id="{anchor(part, path[:1])}"></a>', '', f'### {path[0]}', '']
             parent = path[0]
             level = '####' if len(path) == 2 else '###'
             lines += [f'<a id="{anchor(part, path)}"></a>', '', f'{level} {path[-1]}', '']

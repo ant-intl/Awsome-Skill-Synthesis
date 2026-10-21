@@ -1,29 +1,19 @@
 <h1 align="center">Awesome-Skill-Synthesis</h1>
 
-<p align="center">A curated collection of research on constructing, representing, using, evaluating, and evolving reusable agent skills.</p>
-
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-Companion repository for **From Heterogeneous Evidence to Reusable Procedures: A Survey of Agent Skill Synthesis**.
-
-This catalogue follows Figures 4, 6, 8, 10, 11, and 13 of the survey: **284 distinct papers**, **39 literature categories**, and **606 paper-to-category mappings**. A paper can appear in several categories because it contributes to multiple parts of the skill lifecycle. The collection includes the foundational work shown in the survey taxonomies.
-
-Each entry gives a one-sentence description, a paper link, and an author-linked code repository when confirmed; project pages and datasets are labeled separately.
-
-Last synchronized with the survey: **2026-10-21**.
+This repository accompanies **From Heterogeneous Evidence to Reusable Procedures: A Survey of Agent Skill Synthesis** and organizes research on agent skill synthesis and reuse.
 
 ## Contents
 
-| Part | Survey figure | Distinct papers |
+| Part | Overview | Paper Count |
 | --- | --- | ---: |
-| [1. Skill Sources](#sources) | Figure 4 | 114 |
-| [2. Skill Synthesis Methods](#synthesis) | Figure 6 | 125 |
-| [3. Skill Representations](#representations) | Figure 8 | 131 |
-| [4. Skill Utilization](#utilization) | Figure 10 | 80 |
-| [5. Skill Evaluation](#evaluation) | Figure 11 | 51 |
-| [6. Skill Evolution](#evolution) | Figure 13 | 59 |
-
-Counts overlap across parts. [Maintenance guide](MAINTENANCE.md) · [Paper data](data/papers.json) · [Taxonomy mappings](data/taxonomy.json)
+| [1. Skill Sources](#sources) | Sources provide the evidence used to synthesize skills. | 114 |
+| [2. Skill Synthesis Methods](#synthesis) | Methods transform source evidence into reusable skills. | 125 |
+| [3. Skill Representations](#representations) | Representations define how skills are stored and accessed. | 131 |
+| [4. Skill Utilization](#utilization) | Agents select, execute, and compose skills to solve tasks. | 80 |
+| [5. Skill Evaluation](#evaluation) | Evaluation measures skill quality and effects on task performance. | 51 |
+| [6. Skill Evolution](#evolution) | Evolution updates skills and maintains their libraries. | 59 |
 
 <a id="sources"></a>
 
@@ -31,14 +21,19 @@ Counts overlap across parts. [Maintenance guide](MAINTENANCE.md) · [Paper data]
 
 Skills draw on human supervision, external knowledge, and agent experience.
 
-- [Human Supervision / Behavioral Demonstrations](#sources-human-supervision-behavioral-demonstrations)
-- [Human Supervision / Corrective Feedback](#sources-human-supervision-corrective-feedback)
-- [External Knowledge / Documentary Artifacts](#sources-external-knowledge-documentary-artifacts)
-- [External Knowledge / Software Artifacts](#sources-external-knowledge-software-artifacts)
-- [External Knowledge / Multimodal Artifacts](#sources-external-knowledge-multimodal-artifacts)
-- [Agent Experience / Execution Trajectories](#sources-agent-experience-execution-trajectories)
-- [Agent Experience / Exploratory Practice](#sources-agent-experience-exploratory-practice)
-- [Agent Experience / Deployment Experience](#sources-agent-experience-deployment-experience)
+- **[Human Supervision](#sources-human-supervision)**
+  - [Behavioral Demonstrations](#sources-human-supervision-behavioral-demonstrations)
+  - [Corrective Feedback](#sources-human-supervision-corrective-feedback)
+- **[External Knowledge](#sources-external-knowledge)**
+  - [Documentary Artifacts](#sources-external-knowledge-documentary-artifacts)
+  - [Software Artifacts](#sources-external-knowledge-software-artifacts)
+  - [Multimodal Artifacts](#sources-external-knowledge-multimodal-artifacts)
+- **[Agent Experience](#sources-agent-experience)**
+  - [Execution Trajectories](#sources-agent-experience-execution-trajectories)
+  - [Exploratory Practice](#sources-agent-experience-exploratory-practice)
+  - [Deployment Experience](#sources-agent-experience-deployment-experience)
+
+<a id="sources-human-supervision"></a>
 
 ### Human Supervision
 
@@ -109,6 +104,8 @@ Skills draw on human supervision, external knowledge, and agent experience.
 <!-- paper:xchen2026few -->
 - (*2026*) **A Few Words Go a Long Way: Language Guided Robot Policy Synthesis** [[📝 Paper](https://arxiv.org/abs/2607.23784)]  
   → This approach synthesizes robot policy programs from language guidance, turning human instructions into executable control procedures.
+
+<a id="sources-external-knowledge"></a>
 
 ### External Knowledge
 
@@ -243,6 +240,8 @@ Skills draw on human supervision, external knowledge, and agent experience.
 <!-- paper:xdeng2025open -->
 - (*2025*) **Open-World Skill Discovery from Unsegmented Demonstrations** [[📝 Paper](https://arxiv.org/abs/2503.10684)] [[💻 Code](https://github.com/CraftJarvis/SkillDiscovery)]  
   → This method detects skill boundaries in unsegmented demonstration videos and learns reusable behaviors from the resulting clips.
+
+<a id="sources-agent-experience"></a>
 
 ### Agent Experience
 
@@ -570,10 +569,10 @@ Skills draw on human supervision, external knowledge, and agent experience.
 
 Four construction operations turn source evidence into reusable procedures: procedural distillation, contrastive induction, constructive compilation, and objective optimization.
 
-- [Procedural Distillation](#synthesis-procedural-distillation)
-- [Contrastive Induction](#synthesis-contrastive-induction)
-- [Constructive Compilation](#synthesis-constructive-compilation)
-- [Objective Optimization](#synthesis-objective-optimization)
+- **[Procedural Distillation](#synthesis-procedural-distillation)**
+- **[Contrastive Induction](#synthesis-contrastive-induction)**
+- **[Constructive Compilation](#synthesis-constructive-compilation)**
+- **[Objective Optimization](#synthesis-objective-optimization)**
 
 <a id="synthesis-procedural-distillation"></a>
 
@@ -1127,15 +1126,18 @@ Four construction operations turn source evidence into reusable procedures: proc
 
 Retained procedures take textual, structured, executable, internalized, or hybrid forms.
 
-- [Textual Skills](#representations-textual-skills)
-- [Structured Skills / Sequential Workflows](#representations-structured-skills-sequential-workflows)
-- [Structured Skills / Graph-Based Representations](#representations-structured-skills-graph-based-representations)
-- [Structured Skills / Typed Specifications and Intermediate Representations](#representations-structured-skills-typed-specifications-and-intermediate-representations)
-- [Executable Skills / Functions, Scripts, and Executable Modules](#representations-executable-skills-functions-scripts-and-executable-modules)
-- [Executable Skills / Compiled Runtime Interfaces and Harnesses](#representations-executable-skills-compiled-runtime-interfaces-and-harnesses)
-- [Internalized Skills / Adapter- and LoRA-based Skills](#representations-internalized-skills-adapter-and-lora-based-skills)
-- [Internalized Skills / Learned Policies and Controllers](#representations-internalized-skills-learned-policies-and-controllers)
-- [Hybrid Skills](#representations-hybrid-skills)
+- **[Textual Skills](#representations-textual-skills)**
+- **[Structured Skills](#representations-structured-skills)**
+  - [Sequential Workflows](#representations-structured-skills-sequential-workflows)
+  - [Graph-Based Representations](#representations-structured-skills-graph-based-representations)
+  - [Typed Specifications and Intermediate Representations](#representations-structured-skills-typed-specifications-and-intermediate-representations)
+- **[Executable Skills](#representations-executable-skills)**
+  - [Functions, Scripts, and Executable Modules](#representations-executable-skills-functions-scripts-and-executable-modules)
+  - [Compiled Runtime Interfaces and Harnesses](#representations-executable-skills-compiled-runtime-interfaces-and-harnesses)
+- **[Internalized Skills](#representations-internalized-skills)**
+  - [Adapter- and LoRA-based Skills](#representations-internalized-skills-adapter-and-lora-based-skills)
+  - [Learned Policies and Controllers](#representations-internalized-skills-learned-policies-and-controllers)
+- **[Hybrid Skills](#representations-hybrid-skills)**
 
 <a id="representations-textual-skills"></a>
 
@@ -1260,6 +1262,8 @@ Retained procedures take textual, structured, executable, internalized, or hybri
 <!-- paper:destefanis2026gitskills -->
 - (*2026*) **GitSkills: A Dataset of Agent Skills on GitHub** [[📝 Paper](https://arxiv.org/abs/2608.10906)] [[📦 Data](https://huggingface.co/datasets/mvaccargiu/gitskills)]  
   → GitSkills collects public GitHub skill artifacts to support empirical study of skill structure, distribution, and maintenance.
+
+<a id="representations-structured-skills"></a>
 
 ### Structured Skills
 
@@ -1431,6 +1435,8 @@ Retained procedures take textual, structured, executable, internalized, or hybri
 - (*2026*) **SLBench: Evaluating How LLM Agents Follow Logical Relations in Skills** [[📝 Paper](https://arxiv.org/abs/2607.09016)]  
   → SLBench measures whether agents obey logical relationships and constraints encoded in reusable skill procedures.
 
+<a id="representations-executable-skills"></a>
+
 ### Executable Skills
 
 <a id="representations-executable-skills-functions-scripts-and-executable-modules"></a>
@@ -1580,6 +1586,8 @@ Retained procedures take textual, structured, executable, internalized, or hybri
 <!-- paper:f40 -->
 - (*2024*) **Executable Code Actions Elicit Better LLM Agents** [[📝 Paper](https://arxiv.org/abs/2402.01030)] [[💻 Code](https://github.com/xingyaoww/code-act)]  
   → CodeAct represents agent actions as executable code, enabling the composition and reuse of tool operations through a common interface.
+
+<a id="representations-internalized-skills"></a>
 
 ### Internalized Skills
 
@@ -1735,10 +1743,10 @@ Retained procedures take textual, structured, executable, internalized, or hybri
 
 Agents use skills through context injection, runtime invocation, and model activation, with multi-skill orchestration coordinating their use.
 
-- [Context Injection](#utilization-context-injection)
-- [Runtime Invocation](#utilization-runtime-invocation)
-- [Model Activation](#utilization-model-activation)
-- [Multi-Skill Orchestration](#utilization-multi-skill-orchestration)
+- **[Context Injection](#utilization-context-injection)**
+- **[Runtime Invocation](#utilization-runtime-invocation)**
+- **[Model Activation](#utilization-model-activation)**
+- **[Multi-Skill Orchestration](#utilization-multi-skill-orchestration)**
 
 <a id="utilization-context-injection"></a>
 
@@ -2096,15 +2104,19 @@ Agents use skills through context injection, runtime invocation, and model activ
 
 Evaluation covers five quality dimensions and benchmarks for synthesis, utilization, evolution, and security.
 
-- [Metrics / Fidelity](#evaluation-metrics-fidelity)
-- [Metrics / Utility](#evaluation-metrics-utility)
-- [Metrics / Transferability](#evaluation-metrics-transferability)
-- [Metrics / Efficiency](#evaluation-metrics-efficiency)
-- [Metrics / Safety](#evaluation-metrics-safety)
-- [Benchmarks / Synthesis](#evaluation-benchmarks-synthesis)
-- [Benchmarks / Utilization](#evaluation-benchmarks-utilization)
-- [Benchmarks / Evolution](#evaluation-benchmarks-evolution)
-- [Benchmarks / Security](#evaluation-benchmarks-security)
+- **[Metrics](#evaluation-metrics)**
+  - [Fidelity](#evaluation-metrics-fidelity)
+  - [Utility](#evaluation-metrics-utility)
+  - [Transferability](#evaluation-metrics-transferability)
+  - [Efficiency](#evaluation-metrics-efficiency)
+  - [Safety](#evaluation-metrics-safety)
+- **[Benchmarks](#evaluation-benchmarks)**
+  - [Synthesis](#evaluation-benchmarks-synthesis)
+  - [Utilization](#evaluation-benchmarks-utilization)
+  - [Evolution](#evaluation-benchmarks-evolution)
+  - [Security](#evaluation-benchmarks-security)
+
+<a id="evaluation-metrics"></a>
 
 ### Metrics
 
@@ -2324,6 +2336,8 @@ Evaluation covers five quality dimensions and benchmarks for synthesis, utilizat
 - (*2026*) **On Safety Risks in Experience-Driven Self-Evolving Agents** [[📝 Paper](https://arxiv.org/abs/2604.16968)]  
   → This study measures how experience-driven skill updates can weaken agent safety even when collected experience comes from benign tasks.
 
+<a id="evaluation-benchmarks"></a>
+
 ### Benchmarks
 
 <a id="evaluation-benchmarks-synthesis"></a>
@@ -2438,11 +2452,12 @@ Evaluation covers five quality dimensions and benchmarks for synthesis, utilizat
 
 Skills and their libraries evolve through refinement, reorganization, migration, and reduction.
 
-- [Refinement](#evolution-refinement)
-- [Reorganization / Consolidation](#evolution-reorganization-consolidation)
-- [Reorganization / Specialization](#evolution-reorganization-specialization)
-- [Migration](#evolution-migration)
-- [Reduction](#evolution-reduction)
+- **[Refinement](#evolution-refinement)**
+- **[Reorganization](#evolution-reorganization)**
+  - [Consolidation](#evolution-reorganization-consolidation)
+  - [Specialization](#evolution-reorganization-specialization)
+- **[Migration](#evolution-migration)**
+- **[Reduction](#evolution-reduction)**
 
 <a id="evolution-refinement"></a>
 
@@ -2563,6 +2578,8 @@ Skills and their libraries evolve through refinement, reorganization, migration,
 <!-- paper:xyu2026do -->
 - (*2026*) **Do Self-Evolving Agents Forget? Capability Degradation and Preservation in Lifelong LLM Agent Adaptation** [[📝 Paper](https://arxiv.org/abs/2605.09315)]  
   → This study measures degradation of previously acquired capabilities during skill, workflow, memory, and model updates in self-evolving agents.
+
+<a id="evolution-reorganization"></a>
 
 ### Reorganization
 
